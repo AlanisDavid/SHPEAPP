@@ -27,7 +27,7 @@ export default class SHPEAPP extends Component {
         </Text>
          <TextInput
                 style={{height:40}}
-                placeholder="USERNAME"
+                placeholder="Username"
                 onChangeText={(text) => this.setState({text})}
                 />
         <Text style={styles.instructions}>
