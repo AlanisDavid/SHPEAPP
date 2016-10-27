@@ -9,7 +9,8 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  TextInput
 } from 'react-native';
 
 export default class SHPEAPP extends Component {
@@ -17,14 +18,19 @@ export default class SHPEAPP extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native! David
+          Society of Hispanic Professional Engineers
+
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
+          Log in: 
         </Text>
+         <TextInput
+                style={{height:40}}
+                placeholder="USERNAME"
+                onChangeText={(text) => this.setState({text})}
+                />
         <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+          Password:
         </Text>
       </View>
     );
