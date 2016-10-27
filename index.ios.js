@@ -10,16 +10,17 @@ import {
   StyleSheet,
   Text,
   View,
-  TextInput
+  TextInput,
+  Image
 } from 'react-native';
 
 export default class SHPEAPP extends Component {
   render() {
     return (
       <View style={styles.container}>
+      <Image source={require("./shpepic.png")} style={{width:200, height:110}} />
         <Text style={styles.welcome}>
           Society of Hispanic Professional Engineers
-
         </Text>
         <Text style={styles.instructions}>
           Log in: 
