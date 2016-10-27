@@ -32,6 +32,7 @@ export default class SHPEAPP extends Component {
         <Text style={styles.instructions}>
           Password:
         </Text>
+        
       </View>
     );
   }
